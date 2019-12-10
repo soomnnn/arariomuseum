@@ -1,0 +1,137 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#explain_img{background:skyblue;
+	width:550px; /*width 값으로 전체 이미지 창의 너비를 정함.*/
+	padding-top:18px;
+	
+	position:relative;
+}
+#explain_img span, #explain_img span strong{
+	display:block;text-align:center;
+}
+#explain_img span strong{
+	color:#88332e;font-weight:bold;
+}
+#explain_img span{
+	padding-top:18px;
+}
+#explain_img .prev_btn2{
+	position:absolute;top:150px;left:15px;
+}
+#explain_img .next_btn2{
+	position:absolute;top:155px;right:15px;
+}
+
+
+.bx-pager { margin-left:46%;}
+.bx-pager div{float:left;  margin:8px 0 0 20px; color:#000;}
+.bx-pager div:first-child{margin-left:0;}
+.bx-pager div
+.bx-pager div a {color:#000; font-size:14px;  }
+
+
+
+/*
+#explain_img2{
+	width:550px; 
+	padding-top:18px;
+	
+	position:relative;
+}
+#explain_img2 span, #explain_img2 span strong{
+	display:block;text-align:center;
+}
+#explain_img2 span strong{
+	color:#88332e;font-weight:bold;
+}
+#explain_img2 span{
+	padding-top:18px;
+}
+#explain_img2 .prev_btn3{
+	position:absolute;top:150px;left:15px;
+}
+#explain_img2 .next_btn3{
+	position:absolute;top:155px;right:15px;
+}
+
+
+
+
+
+#explain_img3{
+	width:550px; 
+	padding-top:18px;
+	
+	position:relative;
+}
+#explain_img3 span, #explain_img3 span strong{
+	display:block;text-align:center;
+}
+#explain_img3 span strong{
+	color:#88332e;font-weight:bold;
+}
+#explain_img3 span{
+	padding-top:18px;
+}
+#explain_img3 .prev_btn4{
+	position:absolute;top:150px;left:15px;
+}
+#explain_img3 .next_btn4{
+	position:absolute;top:155px;right:15px;
+}
+
+
+
+
+
+#explain_img4{
+	width:550px; 
+	padding-top:18px;
+	
+	position:relative;
+}
+#explain_img4 span, #explain_img4 span strong{
+	display:block;text-align:center;
+}
+#explain_img4 span strong{
+	color:#88332e;font-weight:bold;
+}
+#explain_img4 span{
+	padding-top:18px;
+}
+#explain_img4 .prev_btn5{
+	position:absolute;top:150px;left:15px;
+}
+#explain_img4 .next_btn5{
+	position:absolute;top:155px;right:15px;
+}
+
+
+
+
+#explain_img5{
+	width:550px; 
+	padding-top:18px;
+	
+	position:relative;
+}
+#explain_img5 span, #explain_img5 span strong{
+	display:block;text-align:center;
+}
+#explain_img5 span strong{
+	color:#88332e;font-weight:bold;
+}
+#explain_img5 span{
+	padding-top:18px;
+}
+#explain_img5 .prev_btn6{
+	position:absolute;top:150px;left:15px;
+}
+#explain_img5 .next_btn6{
+	position:absolute;top:155px;right:15px;
+}
+
+
+*/

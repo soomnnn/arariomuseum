@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 공동 */
+
+body,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0; }
+body { font: normal 12px "맑은 고딕", "Malgun Gothic", serif; }
+ul {list-style:none; }
+img {border:0; vertical-align:top;}
+a {text-decoration:none;}
+
+/* layout */
+
+
+header{width:100%; height:35px;  position: fixed; float:left; background:#fff;  border-bottom:1px solid #000; z-index: 12;}
+
+
+/* wrap */
+
+/*.marquee{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:100%}*/
+
+
+/* header */
+header .logo {text-align: left; padding:6px 0 0 6px; box-sizing: border-box; float:left;}
+
+header .logo_menu {width:600px; height:35px; float:left; margin-left:40px; }
+header .logo_menu li {float:left; font-size:20px; margin-right:15px; margin-top:2px;}
+header .logo_menu li:last-child{margin-right:0;}
+header .logo_menu a {color:#000;}
+header .sns {width:100px; height:35px; float:right; }
+header .sns li{float: left; margin:5px 10px 0 0;}
+header .sns li:last-child{margin-right:0; margin-left:5px;}
+header .sns li img {width:22px; height:22px}
+
+
+	
+#menu_r{width:10px; position:fixed; top:48%; right:10px;}
+#gnb_r li a{width:7px; height:7px; border:1px solid #000; border-radius: 7px; display: block;}
+#gnb_r li{margin-bottom:10px;}
+
+#gnb_r li:nth-child(1):hover a{border:1px solid #000; background:#000;}
+#gnb_r li:nth-child(2):hover a{border:1px solid #000;background:#000;}
+#gnb_r li:nth-child(3):hover a{border:1px solid #000; background: #000;}
+#gnb_r li:nth-child(4):hover a{border:1px solid #000; background: #000;}
+
+
+
+#gnb_r li:nth-child(1).on a{border:1px solid #000;background:#000;}
+#gnb_r li:nth-child(2).on a{border:1px solid #000; background:#000;}
+#gnb_r li:nth-child(3).on a{border:1px solid #000; background: #000;}
+
+
+/* section */
+	
+section {width:100%;height:1200px;box-sizing: border-box; position: relative; }
+
+.page1 {width:100%; overflow: hidden;  z-index:4; background:#fff;}
+.page1 .backimg1 {margin-top:70px;}
+.page1 .backimg2 {text-align: right; margin-top:550px;}
+
+.page1 h5{white-space: nowrap; margin-top:180px;}
+.page1 .marquee {width:2000px; left:50%;animation:marquee 15s linear infinite;
+-webkit-animation:marquee 15s linear infinite;
+-moz-animation:marquee 15s linear infinite;
+float:left; 
+	display:inline;
+}
+.page1 .marquee i {width:100%;font-size:150px; margin-right:130px;
+			letter-spacing: -10px;}
+@keyframes marquee{
+	0% {text-indent: 0em}
+	100%{text-indent: -355em}
+		
+}
+-webkit-@keyframes marquee{
+	0% {text-indent: 0em}
+	100%{text-indent: -355em}
+		
+}
+
+
+
+
+
+
+.page2 {width:100%; position: relative;  z-index:3;}
+.page2 .left {width:50%; height:100%;  background-image: url(../image/2back4.jpg) ; float:left;}
+
+.page2 .left .L_ent {margin: 37px 0 0 10px; line-height: 1.2;   position:fixed;top:0; left:0; width:500px;}
+.page2 .left .L_ent img {width:34px;vertical-align: middle; float:left; margin:5px 5px 0 0; }
+ .page2 .left .L_ent .enter {width:18px;}
+.page2 .left .L_ent h2 {font-size:35px; font-weight: normal; color:#fff;}
+.page2 .left .L_ent h3 {font-size:35px; font-weight: normal; margin-left:10px;color:#fff;}
+.page2 .left span {}
+.page2 .left span img {animation-duration: 1.8s; animation-iteration-count: infinite; animation-name: flash; animation-timing-function: steps(1); padding-left:20px; box-sizing: border-box;}
+
+.page2 .right {width:50%; height:100%; 
+			background-image:url(../image/2back3.jpg); float:left; }
+.page2 .right .R_ent {margin: 37px 0 0 10px; line-height: 1.2;float:right;  position:fixed;top:0; right:0;}
+.page2 .right .R_ent img {vertical-align: middle; float:right; margin:5px 10px 0 0;}
+ .page2 .right .R_ent .enter2 {width:18px;}
+.page2 .right .R_ent h2 {font-size:35px; font-weight: normal; float:left; margin-right:7px; color:#000;}
+.page2 .right .R_ent h3 {font-size:35px; font-weight: normal; margin-left:180px;float: left; color:#000;}
+.page2 .right span {}
+.page2 .right span img {animation-duration: 1.8s; animation-iteration-count: infinite;animation-name: flash; animation-timing-function: steps(1); float:right;  float:right; padding-right:22px; box-sizing: border-box;}
+
+
+.page3 {width:100%;  overflow: hidden;  z-index:4;}
+.page3 video {width:100%;}
+
+
+
+/* footer */
+
+footer {width:100%; height:200px; background:#000;}

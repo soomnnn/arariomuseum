@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 공동 */
+
+body,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0; }
+body { font: normal 12px "맑은 고딕", "Malgun Gothic", serif; }
+ul {list-style:none; }
+img {border:0; vertical-align:top;}
+a {text-decoration:none;}
+
+/* layout */
+
+
+header{width:100%; height:35px;  position: fixed; float:left; z-index: 10; background:#fff; top:0;}
+
+
+/* wrap */
+
+
+/*.marquee{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:100%}*/
+
+
+/* header */
+header .logo {text-align: left; padding:6px 0 0 6px; box-sizing: border-box; float:left;}
+
+header .logo_menu {width:600px; height:35px; float:left; margin-left:40px; }
+header .logo_menu li {float:left; font-size:20px; margin-right:15px; margin-top:2px;}
+header .logo_menu li:last-child{margin-right:0;}
+header .logo_menu a {color:#000;}
+header .sns {width:100px; height:35px; float:right; }
+header .sns li{float: left; margin:5px 10px 0 0;}
+header .sns li:last-child{margin-right:0; margin-left:5px;}
+header .sns li img {width:22px; height:22px}
+
+
+	
+#menu_r{width:10px; position:fixed; top:48%; right:10px;}
+#gnb_r li a{width:7px; height:7px; border:1px solid #000; border-radius: 7px; display: block;}
+#gnb_r li{margin-bottom:10px;}
+
+#gnb_r li:nth-child(1):hover a{border:1px solid #000; background:#000;}
+#gnb_r li:nth-child(2):hover a{border:1px solid #000;background:#000;}
+#gnb_r li:nth-child(3):hover a{border:1px solid #000; background: #000;}
+#gnb_r li:nth-child(4):hover a{border:1px solid #000; background: #000;}
+
+
+
+#gnb_r li:nth-child(1).on a{border:1px solid #000;background:#000;}
+#gnb_r li:nth-child(2).on a{border:1px solid #000; background:#000;}
+#gnb_r li:nth-child(3).on a{border:1px solid #000; background: #000;}
+
+
+/* section */
+
+section {width:100%;height:700px; overflow: hidden; box-sizing: border-box; position: relative;  margin:0 auto; }  
+section .sec_l {width:50%; height:100%; background:; float:left;position:relative }
+
+section .sec_l .seoul {margin:150px 15px 0 0; float:right;}
+section .sec_l .seoul img{width:120px; }
+section .sec_l li {float:left; display: inline;  position:absolute;   }
+section .sec_l li:first-child {right:300px; font-size:30px; letter-spacing: -0.4px; top:428px;}
+section .sec_l li a {color:#000;}
+section .sec_l .square1{width: 0;height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 60px solid #000;
+	transform: rotate(-90deg);
+z-index: 8; right:155px; top:420px;  cursor: pointer;}
+
+section .sec_l .line{width:1px; height:100%; background:#000;float:right; position:absolute; right: 0;}
+
+
+section .sec_r {width:50%; height:100%; background:#000; float:right; position: relative;}
+
+section .sec_r .jeju {width:100px; margin: 148px 0 0 22px;}
+section .sec_r .jeju img{width:108px;  }
+section .sec_r .shape li {float:left; display: inline;  position:absolute;    color:#fff;}
+
+section .sec_r .square2{width: 0;height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 60px solid #fff;
+	transform: rotate(90deg);
+z-index: 8; left:155px; top:420px;  cursor: pointer;}
+
+.muse_list{width:10px; height:10px; animation-duration: 1.8s; animation-iteration-count: infinite; animation-name: flash; animation-timing-function: steps(1); 
+	-webkit-animation-duration: 1.8s; -webkit-animation-iteration-count: infinite; -webkit-animation-name: flash; -webkit-animation-timing-function: steps(1);
+	padding-left:20px; box-sizing: border-box;}
+
+
+
+section .museum_list {width:225px; height:180px; position:absolute; top:370px; left:300px; }
+section .museum_list li{font-size:20px; letter-spacing: -0.4px; line-height: 2.7;}
+section .museum_list a {color:#fff; padding: 14px 10px}
+
+section .museum_list li:hover a {font-size: 20px; opacity: 1;}
+section .museum_list li:on a {font-size:20px; opacity: 1;}
+
+section .museum_list li:nth-child(1):hover a {color:#fff; background:#fff;}
+section .museum_list li:nth-child(2):hover a {color:#fff;  background:#000;}
+section .museum_list li:nth-child(3):hover a {color:#fff;  background:#000;}
+
+
+section .museum_list li:nth-child(1).on a {color:#fff; background:#000; opacity: 1;}
+section .museum_list li:nth-child(2).on a {color:#fff;background:#000;  opacity: 1;}
+section .museum_list li:nth-child(3).on a {color:#fff; background:#000;  opacity: 1;}
+
+
+
+
+
+#menu_top_wrap{ width:100%; height:35px; position: fixed;top:35px; background:#fff;}
+#menu_top { border-top:1px solid #111; padding-left:353px;}
+#menu_top a{display: block; width:150px; height:37px; font:normal 14px "Righteous"; text-align: center; color:#000;  opacity: 0.8; transition: all 0.5s; padding-top:7px; box-sizing: border-box;}
+#menu_top li {float: left; }
+
+#menu_top li:hover a {font-size: 16px; opacity: 1;}
+#menu_top li:on a {font-size:16px; opacity: 1;}
+
+#menu_top li:nth-child(1):hover a {color:#fff; background:#000;}
+#menu_top li:nth-child(2):hover a {color:#fff;  background:#000;}
+#menu_top li:nth-child(3):hover a {color:#fff;  background:#000;}
+
+
+#menu_top li:nth-child(1).on a {color:#fff; background:#000; opacity: 1;}
+#menu_top li:nth-child(2).on a {color:#fff;background:#000;  opacity: 1;}
+#menu_top li:nth-child(3).on a {color:#fff; background:#000;  opacity: 1;}
+
+
+#menu_top_wrap .the {width:125px;height:5px; background:#000 ; position: absolute; top:-4px; left:438px;display: block;}
+
+
+
+/*seoul*/
+
+#space{width:900px; height:900px;  position:fixed; top:70px; left:-900px;overflow: auto; z-index: 10; }
+
+#space .space {width:100%; height:900; }
+
+#space .space .collection{width:100%;font-size:25px; background:#fff;color:#000; text-align: right;}
+#space .space .collection span {font-size:20px; color:rgba(0,0,0,0.7);}
+#space .space .img {width:50%; height:100%; background:#fff; float:right;}
+#space .space .img ul {width:100%; height:100%;float:left; padding:2px 2px 2px 15px;; box-sizing: border-box; margin-top:4px;}
+#space .space .img ul img{width:87%; opacity: 1;}
+#space .space .img ul li{ position: relative; margin-top:15px;}
+#space .space .img ul li:last-child{}
+.space .img ul .ani02 {margin: 20px 0;}
+
+
+
+
+#space .space .txt {width:50%; height:100%; background:#fff;float:left;; padding:17px 15px; box-sizing: border-box; color:#000; text-align: right;}
+#space .space .txt dt {font-size:18px; font-weight: bold; line-height: 1.3}
+#space .space .txt dt span {font-size:12px;}
+#space .space .txt dd {padding:10px 0; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height:2;}
+#space .space .txt .line {width:100%; height:1px; border-top:2px dotted #000;margin: 10px 0 -10px 0;}
+
+#space .space .txt2 dt {font-size:18px; font-weight: bold; line-height: 1.3; margin:20px 0 15px 0;}
+#space .space .txt2 dt span {font-size:12px;}
+#space .space .txt2 dd {padding:5px 3px; margin-right:px; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height: 1.4; float:left;  width:200px;}
+#space .space .txt2 dd span {margin-left: 8px; }
+
+
+/*jeju_museum*/
+
+#jejulist{width:1000px; height: 910px;  position:fixed; top:70px; right:-1100px;overflow: auto; z-index: 1; overflow: hidden; margin-left:100px;}
+#jejulist .jeju_sec{width:100%; height:100%;}
+#jejulist .jeju_sec .collection{width:100%;font-size:25px; background:#000;color:#fff;}
+#jejulist .jeju_sec .collection span {font-size:20px; color:rgba(255,255,255,0.7);}
+
+
+/*topdong*/
+#jejulist .tapdong {width:100%; height:100%; background: #000;}
+#jejulist .tapdong .img {width:500px; height:100%; background:#000; float:left;}
+#jejulist .tapdong .img ul {width:100%; height:100%;float:left; padding:2px 5px; box-sizing: border-box; margin-top:4px;margin-top:10px;}
+#jejulist .tapdong .img ul img{width:87%; opacity: 1;}
+#jejulist .tapdong .img ul li{ position: relative; margin-top:15px;}
+#jejulist .tapdong .img ul li:first-child{margin-top:10px;}
+
+
+
+
+
+#jejulist .tapdong .txt {width:500px; height:100%; background:#000;float:right; padding:17px 15px; box-sizing: border-box; color:#fff;  position: absolute; left:435px;}
+#jejulist .tapdong .txt dt {font-size:18px; font-weight: bold; line-height: 1.3}
+#jejulist .tapdong .txt dt span {font-size:12px;}
+#jejulist .tapdong .txt dd {padding:10px 0; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height:2;}
+#jejulist .tapdong .txt .line {width:100%; height:1px; border-top:2px dotted #fff;margin: 10px 0;}
+#jejulist .tapdong .txt2 dt {font-size:18px; font-weight: bold; line-height: 1.3; margin:20px 0 15px 0;}
+#jejulist .tapdong .txt2 dt span {font-size:12px;}
+#jejulist .tapdong .txt2 dd {padding:5px 3px; margin-right:10px; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height: 1.4; float:left;
+  width:200px;}
+#jejulist .tapdong .txt2 dd span {margin-left: 8px; }
+
+
+
+
+/*dounmun1*/
+#jejulist .dongmun1 .collection{width:100%;font-size:25px; background:#000;color:#fff;position: absolute; box-sizing: border-box; z-index: 9;}
+#jejulist .dongmun1 .collection span {font-size:20px; color:rgba(255,255,255,0.7);z-index: 9;}
+#jejulist .dongmun1 {width:100%; height:100%; background: #000;}
+#jejulist .dongmun1 .img {width:500px; height:100%; background:#000; float:left; position: absolute; left:0;}
+#jejulist .dongmun1 .img ul {width:100%; height:100%;float:left; padding:2px 5px; box-sizing: border-box; margin-top:4px;margin-top:10px;}
+#jejulist .dongmun1 .img ul img{width:80%; opacity: 1;}
+#jejulist .dongmun1 .img ul li{ position: relative; margin-top:15px;}
+#jejulist .dongmun1 .img ul li:first-child{margin-top:10px;}
+#jejulist .dongmun1 .img ul .img1 {width:400px;top:35px;}
+
+
+
+
+#jejulist .dongmun1 .txt {width:500px; height:100%; background:#000;float:right; padding:17px 15px; box-sizing: border-box; color:#fff;  position: absolute; left:435px;margin-top:33px; }
+#jejulist .dongmun1 .txt dt {font-size:18px; font-weight: bold; line-height: 1.3}
+#jejulist .dongmun1 .txt dt span {font-size:12px;}
+#jejulist .dongmun1 .txt dd {padding:10px 0; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height:2;}
+#jejulist .dongmun1 .txt .line {width:100%; height:1px; border-top:2px dotted #fff;margin: 10px 0;}
+#jejulist .dongmun1 .txt2 dt {font-size:18px; font-weight: bold; line-height: 1.3; margin:20px 0 15px 0;}
+#jejulist .dongmun1 .txt2 dt span {font-size:12px;}
+#jejulist .dongmun1 .txt2 dd {padding:5px 3px; margin-right:10px; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height: 1.4; float:left;
+  width:200px;}
+#jejulist .dongmun1 .txt2 dd span {margin-left: 8px; }
+
+
+
+
+
+
+/*dongmun2*/
+#jejulist .dongmun2 .collection{width:100%;font-size:25px; background:#000;color:#fff;position: absolute; box-sizing: border-box;}
+#jejulist .dongmun2 .collection span {font-size:20px; color:rgba(255,255,255,0.7);}
+#jejulist .dongmun2 {width:100%; height:100%; margin-top:; background: #000;}
+#jejulist .dongmun2 .img {width:450px;; height:100%; background:#000; float:left;  position: absolute; left:0; margin-top:33px;}
+#jejulist .dongmun2 .img ul {width:100%; height:100%;float:left; padding:2px 5px; box-sizing: border-box; margin-top:4px;}
+#jejulist .dongmun2 .img ul img{width:98%; opacity: 1; margin-top:20px;}
+#jejulist .dongmun2 .img ul li{ position: relative;}
+
+
+
+#jejulist .dongmun2 .txt {width:50%; height:100%; background:#000;float:right; padding:17px 15px; box-sizing: border-box; color:#fff; position: absolute; left:435px;margin-top:33px; z-index:8;}
+#jejulist .dongmun2 .txt dt {font-size:18px; font-weight: bold; line-height: 1.3}
+#jejulist .dongmun2 .txt dt span {font-size:12px;}
+#jejulist .dongmun2 .txt dd {padding:10px 0; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height: 2;}
+#jejulist .dongmun2 .txt .line {width:100%; height:1px; border-top:2px dotted #fff;margin: 10px 0;}
+#jejulist .dongmun2 .txt2 dt {font-size:18px; font-weight: bold; line-height: 1.3; margin:20px 0 15px 0;}
+#jejulist .dongmun2 .txt2 dt span {font-size:12px;}
+#jejulist .dongmun2 .txt2 dd {padding:5px 3px; margin-right:10px; box-sizing: border-box; font-size:13px; letter-spacing: -0.4px; line-height: 2; float:left;
+  }
+#jejulist .dongmun2 .txt2 dd span {margin-left: 8px; }
+

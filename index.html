@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ARARIO MUSEUM</title>
+<link rel="stylesheet" type="text/css" href="css/main2.css">
+<link rel="stylesheet" type="text/css" href="css/animate-ex.css">
+<link rel="shortcut icon"  type="image/x-icon"  href="image/favicon.ico">
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+
+
+
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.parallax-scroll.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript" type="text/javascript">
+	//<![CDATA[
+	$(function(){
+		$(".left").mouseover(function(){ //<a>에 마우스를 올렸을 때...
+			$(".right").css("opacity",".8"); //<a>에 배경 속성을 지웁니다.
+
+		});
+		$(".left").mouseout(function(){
+			$(".right").css("opacity","1")
+		});
+
+		$(".right").mouseover(function(){ //<a>에 마우스를 올렸을 때...
+			$(".left").css("opacity",".8"); //<a>에 배경 속성을 지웁니다.
+
+		});
+		$(".right").mouseout(function(){
+			$(".left").css("opacity","1")
+		});
+
+
+
+
+
+
+	});
+
+//]]>
+
+</script>
+
+
+
+
+</head>
+
+<body>
+	<div id="wrap">
+    	<!--<h5 class="marquee" style="transform: translate3d"><i>Shop the look</i><i>Shop the look</i><i>Shop the look</i><i>Shop the look</i><i>Shop the look</i></h5>-->
+    	<header>
+			<h1 class="logo">
+				<a href="index.html"><img src="image/logo.png" alt="logo"></a>
+   			</h1>
+
+   			<nav>
+   			<ul class="logo_menu">
+   				<li onClick="self.location='index.html';"><a href="">HOME</a></li>
+				<li onClick="self.location='sub1/sub1.html';"><a href="">ABOUT</a></li>
+				<li onClick="self.location='sub1/sub2.html';"><a href="">EXHIBITION</a></li>
+				<li onClick="self.location='sub1/sub4.html';"><a href="">FACILITY</a></li>
+				<li onClick="self.location='sub1/sub5.html';"><a href="">INFORMATION</a></li>
+   			</ul>
+
+   			<ul class="sns">
+   				<li><a href="https://www.facebook.com/arariomuseum" target="_blank"><img src="image/facebook.png"></a></li>
+   				<li><a href="https://www.instagram.com/arariomuseum/" target="_blank"><img src="image/instagram.png"></a></li>
+   				<li><a href="https://www.youtube.com/channel/UC-ZxZVsz1ECucZcNANDZQVg" target="_blank"><img src="image/youtube.png"></a></li>
+   			</ul>
+
+
+
+   			<div id="menu_r">
+				<ul id="gnb_r">
+					<li class="on"><a href="#1"></a></li>
+					<li><a href="#2"></a></li>
+					<li><a href="#3"></a></li>
+
+				</ul>
+			</div>
+			</nav>
+
+    	</header>
+
+    	<section id="1" class="page1">
+    		<p class="backimg1">
+    			<img src="image/seoul_rhythm.jpg">
+
+    		</p>
+
+
+    		<h5 class="marquee">
+    		<!--<marquee loop="100" direction="left" >-->
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+    			<i>ARARIO MUSEUM</i>
+
+			</h5>
+
+				<!--<marquee loop="100" direction="right" >
+
+			</marquee>-->
+
+
+    		<p class="backimg2">
+    			<img src="image/jeju_rhythm.jpg">
+    		</p>
+    		<div id="page1"></div>
+    	</section><!-- section1 -->
+
+    	<section id="2" class="page2">
+    		<a href="#">
+   				<div class="left">
+    				<div class="L_ent">
+    					<img src="image/enter-w.png" class="enter">
+						<h2>ARRIO MUSEUM</h2>
+						<span><img src="image/square-w.jpg" alt=""></span><h3>SEOUL</h3>
+
+    				</div><!--L_ent-->
+    			</div> <!-- left-->
+			</a>
+
+    		<a href="#">
+   				<div class="right">
+    				<div class="R_ent">
+    					<div class="Rtxt">
+    					<img src="image/enter2.png" class="enter2">
+
+    					<h2>ARRIO MUSEUM</h2><br>
+    					<h3>JEJU</h3>
+    					<span><img src="image/square.jpg" alt=""></span>
+						</div>
+
+    				</div><!--R_ent-->
+
+
+    			</div> <!--right -->
+			</a>
+
+
+    		<div id="page2"></div>
+    	</section><!-- section2 -->
+
+
+    	<section id="3" class="page3">
+    		<video autoplay loop muted>
+        	<source src="video/ARARIO MUSEUM.mp4" type="video/mp4">
+        </video>
+    		<div id="page3"></div>
+    	</section><!-- section3 -->
+
+    </div>
+
+
+    <footer>
+
+    </footer>
+
+
+
+ <script>
+  $(document).ready(function(){
+  $('nav a, #gnb_r a').click(function(e){
+  $.scrollTo(this.hash || 0, 300);
+  e.preventDefault();
+  });
+});
+</script>
+
+
+
+<script src="js/wow.js"></script>
+<script>
+
+	wow = new WOW(
+	{
+		animateClass: 'animated',
+		offset: 100
+
+
+	});
+	wow.init();
+	</script>
+
+
+
+
+</body>
+</html>
